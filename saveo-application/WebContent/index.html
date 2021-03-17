@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+</head>
+<body>
+	<h1>Welcome to Application</h1>
+
+	<br>
+	<br>
+	<br>
+
+	<form action="UploadCSV">
+		<label>1. Enter csv path here : </label> 
+		<input type="text" name="path" placeholder="csv file path" required="required" /> 
+		<input type="submit" value="update database" />
+	</form>
+
+	<br><br>
+
+	<form action="SearchMedicine">
+		<label>2. Search Medicine : </label>
+		<input type="text" name="c_name" placeholder="Ex: STATOR" required="required" /> 
+		<input type="submit" value="Search" />
+	</form>
+	
+	<br><br>
+	
+	<form action="GetMedicineDetails">
+		<label>3. Enter Unique ID Here : </label>
+		<input type="text" name="id" placeholder="Ex: 113052" required="required" /> 
+		<input type="submit" value="Get Details" />
+	</form>
+
+	<br><br>
+	
+	<form action="PlaceOrder">
+		<label>4. Place Order : </label>
+		<input type="text" name="uid" placeholder="Unique ID" required="required"/>
+		<input type="text" name="qty" placeholder="Quantity" required="required" />
+		<input type="text" name="cname" placeholder="Medicine Name"/>
+		<input type="submit" value="Buy Now" />
+	</form>
+</body>
+</html>
